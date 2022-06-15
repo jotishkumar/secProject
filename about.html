@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Watering System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="PWSys.html"><img src="plant.jpeg"></a>
+            <div class="navlinks" id="navlinks">
+                <i class="bi bi-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="PWSys.html">Home</a></li>
+                    
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="Journal.html">Journal</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <section class="row">
+        <div class="about-col">
+            <h1>We are the helping to change the world</h1>
+            <p>For the automatic plant watering system, a moisture level sensor is attached to the soil of the plant and when the reading of the sensor is below the pre-set value, the pump will be activated. On the other hand, when the 
+                reading of the sensor is above the pre-set value, the pump will be 
+                deactivated.</p>
+                <a href="explore.html" class="btn1 redBtn">Explore More</a>
+        </div>
+        <div class="about-col">
+            <img src="about1.jpg">
+        </div>
+    </section>
+  
+    <!-- --------Footer--------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            Water Treatment Technology is a high-tech enterprise specialized in 
+            various water processing devices. Aside from these individual
+            products, which cover a number of types
+            </p>
+            <div class="icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+
+            </div>
+    </section>
+
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
